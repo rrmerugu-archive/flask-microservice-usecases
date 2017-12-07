@@ -6,6 +6,6 @@
 
 
 docker build  -t mydocker-image --build-arg build_env="production" -f Dockerfile . --no-cache"
-docker run  --name mydocker -p 5010:5010 -d  mydocker-image"
+docker run  --name mydocker -p 5000:5000 -d  mydocker-image"
 
 

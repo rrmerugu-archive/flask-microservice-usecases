@@ -1,4 +1,6 @@
-# Flask Example
+# Flask Examples
 
-This is a basic example of Flask with simple RESTful API.
+This repository is a collection of differnt example usecases/codes to write microservices with Flask.
+All the examples are show with best practices to including automation tests.
 
+Projects will contain scraip
