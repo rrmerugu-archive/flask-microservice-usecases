@@ -9,9 +9,9 @@ RUN [ -d /webapp ] || mkdir /webapp;
 COPY  ./ /webapp
 WORKDIR /webapp
 
-RUN pip install -r requirements.txt
-RUN pip install uwsgi
-EXPOSE 50100
+RUN pip install -r requirements/requirements.txt
+RUN pip install -r requirements/requirements-prod.txt
+EXPOSE 5000
 CMD uwsgi --http :5000 --wsgi-file wsgi.py --master --processes 4 --threads  2
 
 
